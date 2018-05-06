@@ -16,6 +16,8 @@ namespace SerializeDeserialize
             // Deserialize the JSON string bact to Obj
             var ProductObjDeserialized = JsonConvert.DeserializeObject<Product>(jsonString);
             System.Console.WriteLine($"The product ID is {ProductObjDeserialized.Id}");
+            System.Console.WriteLine($"The product Name is {ProductObjDeserialized.Name}");
+            System.Console.WriteLine($"The product Price is {ProductObjDeserialized.Price}");
         }
     }
 
