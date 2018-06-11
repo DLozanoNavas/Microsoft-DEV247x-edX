@@ -4,7 +4,7 @@ using WebServer.Models;
 
 namespace WebServer.Controllers {
     [Route("api/[controller]")]
-    public class ProductController : Controller {
+    public class ProductsController : Controller {
         [HttpGet]
         public ActionResult Get() {
             return Ok(Repository.Products.Values.ToArray());
